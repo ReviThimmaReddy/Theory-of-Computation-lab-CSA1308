@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<structure>
+  <type>tm</type>
+  <automaton>
+    <state id="0" name="q0">
+      <initial />
+    </state>
+    <state id="1" name="q1" />
+    <state id="2" name="q2" />
+    <state id="3" name="q3" />
+    <state id="4" name="qf">
+      <final />
+    </state>
+    <transition>
+      <from>0</from>
+      <to>1</to>
+      <read>a</read>
+      <write>X</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>1</to>
+      <read>a</read>
+      <write>a</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>1</from>
+      <to>2</to>
+      <read>b</read>
+      <write>Y</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>2</to>
+      <read>b</read>
+      <write>Y</write>
+      <move>R</move>
+    </transition>
+    <transition>
+      <from>2</from>
+      <to>3</to>
+      <read>_</read>
+      <write>_</write>
+      <move>L</move>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>3</to>
+      <read>Y</read>
+      <write>Y</write>
+      <move>L</move>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>3</to>
+      <read>a</read>
+      <write>a</write>
+      <move>L</move>
+    </transition>
+    <transition>
+      <from>3</from>
+      <to>0</to>
+      <read>X</read>
+      <write>X</write>
+      <move>R</move>
+    </transition>
+  </automaton>
+</structure>
